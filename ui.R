@@ -11,6 +11,7 @@ shinyUI(pageWithSidebar(
     h4('height'),
     verbatimTextOutput("inputheight"),
     h4('Risk of heart diseases in percentage'),
-    verbatimTextOutput("Prediction")
+    verbatimTextOutput("Prediction"),
+    h4('Note:Body mass index is a useful measure of overweight and obesity. It is calculated from your height and weight. BMI is an estimate of body fat and a good gauge of your risk for diseases that can occur with more body fat. The higher your BMI, the higher your risk for heart disease.')
   )
 ))

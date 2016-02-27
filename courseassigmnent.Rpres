@@ -1,0 +1,35 @@
+Prediction of the risk of heart diseases
+========================================================
+author: Bingfang Xu
+date: Feburary 26,2016
+
+
+========================================================
+Body mass index (BMI) is a useful measure of overweight and obesity. It is calculated from your height and weight. BMI is an estimate of body fat and a good gauge of your risk for diseases that can occur with more body fat. The higher your BMI, the higher your risk for heart disease, 
+ 
+- Underweight:   Below 18.5
+- Normal:  	18.5–24.9
+- Overweight:  	25.0–29.9
+- Obesity:  	30.0 and Above
+
+
+========================================================
+
+This prediction tool complish two tasks:
+
+- Calculate body mass index using weight and height
+- Prediction of the risk of heart diseases using body mass index
+
+
+========================================================
+
+```{r, echo=FALSE}
+BMI <- rnorm(10, mean = 22, sd = 15)
+risk <-function (BMI){ BMI-22}
+risk<-risk(BMI)
+plot(BMI,risk, main="The risk of heart diseases", xlab="BMI",ylab="Risk in percentage", pch=25)
+```
+
+=======================================================
+
+Warning: this prediction tool is based on little scientific research. It should not be used as a medical advice.
